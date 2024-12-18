@@ -51,11 +51,6 @@ struct CTFI: ParsableCommand {
     var version: Bool = false
 
     mutating func run() throws {
-        // if version {
-        //     print("ctri version 1.0.0")
-        //     return
-        // }
-        //
         if let message = validate() {
             print(message)
             return
